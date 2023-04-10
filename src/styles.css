@@ -1,0 +1,104 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*{box-sizing: border-box;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+button:hover{
+  background-color: aquamarine;
+}
+html, body {
+  height: 100vh;
+}
+.main {
+  flex-direction: column;
+}
+.main > * {
+  margin: 10px;
+}
+.game-field {
+  font-size: 20px;
+}
+.container {
+  margin: 10px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 1000px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#play {
+  display: block;
+  font-size: 30px;
+  padding: 5px 10px;
+}
+#next-word {
+  display: none;
+  font-size: 30px;
+  padding: 5px 10px;
+}
+#ABC {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.alphabet-char {
+  flex-basis: calc(100% / 6);
+  margin: 5px;
+  font-size: 25px;
+}
+#string-with-word {
+  font-size: 35px;
+}
+#turn-count {
+  font-size: 35px;
+  margin: 0px 10px;
+}
