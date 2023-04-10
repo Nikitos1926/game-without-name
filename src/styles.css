@@ -52,10 +52,10 @@ button:hover{
 html, body {
   height: 100vh;
 }
-.main {
+#game {
   flex-direction: column;
 }
-.main > * {
+#game > * {
   margin: 10px;
 }
 .game-field {
@@ -75,30 +75,33 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-#play {
+#playButton {
   display: block;
   font-size: 30px;
   padding: 5px 10px;
 }
-#next-word {
+#nextWordButton {
   display: none;
   font-size: 30px;
   padding: 5px 10px;
 }
-#ABC {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+#game.started #nextWordButton {
+  display: block;
 }
-.alphabet-char {
-  flex-basis: calc(100% / 6);
+
+#screenKeyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keyboard-key {
   margin: 5px;
   font-size: 25px;
 }
-#string-with-word {
+#currentWord {
   font-size: 35px;
 }
-#turn-count {
+#triesCountLabel {
   font-size: 35px;
   margin: 0px 10px;
 }
